@@ -1,0 +1,277 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+:root {
+	--oat: #f5f1ed; 
+	--cinnamon: #8e5d3f; 
+	--charcoal: #2c2c2c; 
+	--cream: #ffffff; 
+}
+
+.App {
+	background-color: var(--oat);
+	min-height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	color: var(--charcoal);
+	padding-bottom: 50px;
+}
+
+.book-card {
+	background: var(--cream);
+	border: none !important;
+	border-radius: 20px !important;
+	transition: all 0.3s ease;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.book-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 30px rgba(142, 93, 63, 0.12);
+}
+
+.btn-cinnamon {
+	background-color: var(--cinnamon) !important;
+	color: white !important;
+	border-radius: 12px !important;
+	border: none !important;
+	padding: 10px 25px !important;
+	font-weight: 600 !important;
+}
+
+.btn-cinnamon:hover {
+	background-color: var(--charcoal) !important;
+}
+
+.stat-box {
+	background-color: var(--charcoal);
+	color: var(--oat);
+	border-radius: 25px;
+	padding: 40px;
+}
+
+.status-badge {
+	background-color: var(--oat);
+	color: var(--cinnamon);
+	font-weight: 700;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.italic-font {
+	font-style: italic;
+	letter-spacing: -1px;
+}
+
+.home-container {
+	padding-top: 20px;
+}
+
+.stat-box {
+	background:
+		linear-gradient(rgba(44, 44, 44, 0.9), rgba(44, 44, 44, 0.9)),
+		url("https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=2098&auto=format&fit=crop");
+	background-size: cover;
+	background-position: center;
+	transition: all 0.5s ease-in-out;
+}
+
+.genre-card {
+	background: white;
+	transition: 0.3s;
+	cursor: pointer;
+	border: 1px solid #eee;
+}
+
+.genre-card:hover {
+	background: var(--oat);
+	transform: translateY(-5px);
+}
+
+.btn-cinnamon {
+	background: var(--cinnamon);
+	transition: all 0.3s;
+}
+
+.btn-cinnamon:hover {
+	transform: scale(1.05);
+	filter: brightness(1.1);
+}
+
+.navbar-logo {
+	width: 40px;
+	height: 40px;
+	background: var(--cinnamon);
+	border-radius: 10px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-weight: 900;
+	margin-right: 10px;
+}
+
+.animate-fade-in {
+	animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.border-dashed {
+	border-style: dashed !important;
+	border-width: 2px !important;
+	transition: all 0.3s ease;
+}
+
+.border-dashed:hover {
+	background: #fdfdfd !important;
+	border-color: var(--cinnamon) !important;
+}
+
+.sticky-md-top {
+	position: -webkit-sticky;
+	position: sticky;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap");
+
+:root {
+	/* The "Pukesh-Wine & Cinnamon" Palette */
+	--bg-oat: #f9f6f2;
+	--cinnamon: #8e5d3f;
+	--wine-deep: #4a1c1c;
+	--charcoal: #2d2926;
+	--soft-gold: #d4a373;
+	--glass-white: rgba(255, 255, 255, 0.85);
+	--shadow-warm: 0 20px 40px rgba(142, 93, 63, 0.1);
+}
+
+body {
+	background-color: var(--bg-oat);
+	font-family: "Montserrat", sans-serif;
+	color: var(--charcoal);
+	overflow-x: hidden;
+}
+
+/* --- TYPOGRAPHY --- */
+h1,
+h2,
+h3,
+.italic-font {
+	font-family: "Playfair Display", serif; /* Elegant, book-like font */
+	font-style: italic;
+}
+
+/* --- THE NAVIGATION BAR --- */
+.navbar {
+	background: var(--glass-white) !important;
+	backdrop-filter: blur(12px); /* Frosted glass effect */
+	border-bottom: 1px solid rgba(142, 93, 63, 0.1) !important;
+}
+
+.navbar-logo {
+	background: linear-gradient(135deg, var(--wine-deep), var(--cinnamon));
+	box-shadow: 0 4px 10px rgba(74, 28, 28, 0.3);
+	font-family: "Montserrat", sans-serif;
+}
+
+/* --- THE HERO (THE QUOTE BOX) --- */
+.stat-box {
+	background:
+		linear-gradient(rgba(45, 41, 38, 0.7), rgba(74, 28, 28, 0.8)),
+		url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2256&auto=format&fit=crop") !important;
+	background-size: cover !important;
+	background-position: center !important;
+	border-radius: 40px !important;
+	padding: 80px 40px !important;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: var(--shadow-warm);
+}
+
+/* --- BENTO CARDS (STATS & BOOKS) --- */
+.book-card {
+	background: var(--glass-white) !important;
+	border: 1px solid rgba(255, 255, 255, 0.5) !important;
+	border-radius: 30px !important;
+	backdrop-filter: blur(5px);
+	transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.02) !important;
+}
+
+.book-card:hover {
+	transform: translateY(-12px) scale(1.02);
+	box-shadow: 0 30px 60px rgba(142, 93, 63, 0.15) !important;
+	border: 1px solid var(--cinnamon) !important;
+}
+
+/* --- BUTTONS --- */
+.btn-cinnamon {
+	background: linear-gradient(
+		135deg,
+		var(--cinnamon),
+		var(--wine-deep)
+	) !important;
+	color: white !important;
+	border-radius: 15px !important;
+	padding: 14px 35px !important;
+	border: none !important;
+	font-weight: 600 !important;
+	box-shadow: 0 10px 20px rgba(142, 93, 63, 0.3) !important;
+}
+
+.btn-cinnamon:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 15px 30px rgba(142, 93, 63, 0.4) !important;
+}
+
+/* --- GENRE RECOMMENDATION PILLS --- */
+.genre-card {
+	border-radius: 25px !important;
+	border: none !important;
+	background: white !important;
+	overflow: hidden;
+}
+
+.genre-img {
+	background: linear-gradient(135deg, #fdfbf7, #f5f1ed) !important;
+	color: var(--wine-deep) !important;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/* --- STATUS BADGES --- */
+.status-badge {
+	background: rgba(142, 93, 63, 0.1) !important;
+	color: var(--cinnamon) !important;
+	padding: 8px 16px !important;
+	font-size: 0.65rem !important;
+}
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in {
+	animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Staggering the book grid entries */
+.row > .col:nth-child(1) {
+	animation-delay: 0.1s;
+}
+.row > .col:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.row > .col:nth-child(3) {
+	animation-delay: 0.3s;
+}
